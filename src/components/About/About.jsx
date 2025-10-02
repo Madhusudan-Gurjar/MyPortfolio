@@ -185,8 +185,8 @@ const About = () => {
 
   <Tilt
     className="w-[75%] max-w-[320px] aspect-square border-4 border-purple-700 rounded-full transition-transform duration-500 hover:scale-105 hover:shadow-[0_0_50px_rgba(130,69,236,0.7)] relative z-10"
-    tiltMaxAngleX={50}
-    tiltMaxAngleY={50}
+    tiltMaxAngleX={30}
+    tiltMaxAngleY={30}
     perspective={1000}
     scale={1}
     transitionSpeed={1000}
