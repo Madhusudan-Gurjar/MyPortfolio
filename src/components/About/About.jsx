@@ -118,15 +118,15 @@ import profile4 from '../../assets/Profile4.jpg';
 const images = [profile1, profile2, profile3, profile4];
 
 const About = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Cycle through images every 3 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
+  // // Cycle through images every 3 seconds
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  //   }, 3000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <section
@@ -193,7 +193,7 @@ const About = () => {
     gyroscope={true}
   >
     <img
-      src={images[currentIndex]}
+      src={profile4}
       alt="Madhusudan Gurjar"
       className="w-full h-full rounded-full object-cover border-2 border-purple-400 shadow-lg transition-opacity duration-1000"
     />
